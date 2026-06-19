@@ -105,7 +105,7 @@ loader.load(
     box.setFromObject(model);
     const center = box.getCenter(new THREE.Vector3());
     model.position.sub(center);
-    model.position.y =  1+size.y * scaleFactor * 0.5;
+    model.position.y =  0.66+size.y * scaleFactor * 0.5;
     model.rotation.y = Math.PI * 0.75;
     scene.add(model);
     controls.target.set(0, 0, 0);
