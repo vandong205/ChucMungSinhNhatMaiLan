@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chúc mừng sinh nhật MaiLan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js",
+      "three/": "https://cdn.jsdelivr.net/npm/three@0.162.0/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="scene-wrapper">
+    <canvas id="three-canvas"></canvas>
+    <div class="banner" id="banner">
+      <div class="title">Chúc mừng sinh nhật MaiLan</div>
+    </div>
+    <div class="letter-ui" id="letterUI">
+      <div class="letter-card">
+        <img id="envelopeImage" src="resources/images/envelope_close.png" alt="Thư chưa mở">
+        <button id="openButton" class="primary-button">Mở thư</button>
+      </div>
+    </div>
+    <div class="overlay hidden" id="overlay">
+      <div class="overlay-content">
+        <div id="typingText" class="typing-text"></div>
+        <div class="overlay-footer">
+          <button id="nextButton" class="primary-button">Trang kế tiếp</button>
+          <button id="closeButton" class="primary-button hidden">Hoàn tất</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
